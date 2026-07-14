@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- PdfService.saveToTempFile() writes into getTemporaryDirectory(),
+         which on Android maps to the app's cache dir. -->
+    <cache-path name="stax_exports" path="." />
+    <external-cache-path name="stax_exports_external" path="." />
+</paths>

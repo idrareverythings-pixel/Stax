@@ -1,0 +1,49 @@
+name: stax
+description: "Stax — merge, organize, sign, and secure PDFs. Android."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- PDF rendering (thumbnails + full-page viewer via PDFium bindings) ---
+  pdfrx: ^0.4.18
+
+  # --- PDF manipulation: merge, split, extract, rotate, encrypt, form fields ---
+  # This is the pdf-lib equivalent — it can load & mutate existing PDF byte
+  # structures, which the pure-Dart `pdf` package (generation-only) cannot do.
+  syncfusion_flutter_pdf: ^26.2.14
+
+  # --- native file access ---
+  file_picker: ^8.1.2
+  path_provider: ^2.1.4
+  share_plus: ^10.1.2
+  permission_handler: ^11.3.1
+
+  # --- camera scan-to-PDF ---
+  camera: ^0.11.0+2
+  image: ^4.3.0
+
+  # --- on-device OCR (scanned PDF -> searchable text layer) ---
+  google_mlkit_text_recognition: ^0.14.0
+
+  # --- fill & sign ---
+  signature: ^5.5.0
+
+  # --- state management ---
+  provider: ^6.1.2
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

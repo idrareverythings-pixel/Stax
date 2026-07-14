@@ -1,0 +1,8 @@
+# Copy this file to android/local.properties (same folder) and fill in
+# the paths for your machine. This file is machine-specific and must
+# never be committed.
+
+sdk.dir=/path/to/Android/sdk
+flutter.sdk=/path/to/flutter
+flutter.versionName=0.1.0
+flutter.versionCode=1
